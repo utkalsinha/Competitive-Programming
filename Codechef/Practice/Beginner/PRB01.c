@@ -1,5 +1,5 @@
 /*
-  Problem	:	Codechef - Practice (PRB01)
+  Problem	:	Codechef - Practice (PRB01: https://www.codechef.com/problems/PRB01)
   Author	: 	Utkal Sinha
   Contact	: 	info@utkalsinha.com
 */
