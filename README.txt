@@ -1,1 +1,1 @@
-Hello
+This GitHub repository is to store source codes of all competitive programming contests and practices that I have participated.
