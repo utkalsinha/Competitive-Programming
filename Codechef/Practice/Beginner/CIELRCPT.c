@@ -14,7 +14,6 @@ int main(){
 		scanf("%d",&p);
 		if(p>2048) ans = p/2048, p = p%2048;
 		while(p){
-			
 			if((p&1)==1) ans++;
 			p = p>>1;
 		}
