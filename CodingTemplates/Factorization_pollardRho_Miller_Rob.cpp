@@ -1,5 +1,7 @@
 // https://github.com/t3nsor/codebook/blob/master/pollard-rho.cpp
 // also includes Rabin-Miller algorithm
+#include <bits/stdc++.h>
+using namespace std;
 
 typedef long long unsigned int llui;
 typedef long long int lli;
@@ -36,7 +38,7 @@ llui f(llui a, llui b){
    tmp+=C; tmp%=b;
    return tmp;
 }
-
+// will give you "a" non-trivial factor of "n". COuld be prime or not
 llui pollard(llui n){
    if(!(n&1)) return 2;
    C=0;
@@ -106,4 +108,15 @@ void fact(llui n){
          factors[n] = 1;
       }
    }
+}
+
+int main(){
+	llui n = 84;
+	fact(n);
+	map<llui,int>::iterator it = factors.begin();
+	while(it != factors.end()) {
+		printf("%d ",(*it).second);
+		it++;
+	}
+	return 0;
 }
