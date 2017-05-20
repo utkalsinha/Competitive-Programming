@@ -22,7 +22,16 @@ int pollardRho(int n) {
 
 // Main program to check and demo
 int main(){
-	int n = 49*7;
-	printf("one factor of %d is %d\n",n,pollardRho(n));
+	int n;
+	char c;
+	while(true){
+		printf("Enter a number: ");
+		scanf("%d",&n);
+		getchar();
+		printf("one factor of %d is %d\n",n,pollardRho(n));
+		printf("Want to continue ? (y/n) ");
+		scanf("$c ",&c);
+		if(c=='n')break;
+	}
 	return 0;
 }
